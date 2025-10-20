@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&subset=thai');
+@import "tailwindcss";
+
+
+* {
+  font-family: "Taviraj", sans-serif;
+}
+
+.del-line-height {
+  line-height: 0 !important;
+}
+.line_height {
+  line-height: 0 !important;
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 6px #E5067E, 0 0 12px #E5067E;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 14px #ff52aa, 0 0 24px #ff52aa;
+    transform: scale(1.08);
+  }
+  100% {
+    box-shadow: 0 0 6px #E5067E, 0 0 12px #E5067E;
+    transform: scale(1);
+  }
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeSlideUp {
+  animation: fadeSlideUp 0.4s ease-out forwards;
+}
